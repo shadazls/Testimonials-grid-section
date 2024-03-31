@@ -1,0 +1,51 @@
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
+
+#first-child {
+    background-color: hsl(263, 55%, 52%);
+}
+
+#second-child {
+    background-color: hsl(217, 19%, 35%);
+}
+
+#third-child {
+    background-color: hsl(0, 0%, 100%);
+}
+
+#fourth-child {
+    background-color: hsl(0, 0%, 100%);
+}
+
+#fifth-child {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.dark-color {
+    color: hsl(217, 19%, 35%);
+}
+
+.hvr-bounce-in {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+@media screen and (max-width: 748px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .col-span-2 {
+      grid-column: span 1;
+    }
+}
